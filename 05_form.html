@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+</head>
+<body>
+    <h1>Формы</h1>
+
+
+    <form>
+        <!-- обычный текст -->
+        <div>
+            <label for="text1">Текст</label>
+            <input type="text" id="text1"                    
+            value="Текст по умолчанию" readonly>
+            <!-- (value="Текст по умолчанию" readonly) просто текст, который невозможно изменить-->
+            
+        </div>
+<!-- почта -->
+        <div>
+            <label for="email1">Email</label>
+            <input type="email" id="email1"
+            placeholder="Введите email">
+            <!-- placeholder нужен для подсказки, что писать вообще надо -->
+        </div>
+<!-- пароль -->
+        <div>
+            <label for="password1">Пароль</label>
+            <input type="password" id="password1">
+        </div>
+<!-- только числа (можно выбрать диапозон) -->
+        <div>
+            <label for="number1">Число</label>
+            <input type="number" id="number1" min="0">
+        </div>
+<!-- бегунок -->
+        <div>
+            <label for="range">Range</label>
+            <input type="range" id="range" min="0" max="40" step="10">
+        </div>
+<!-- дата -->
+        <div>
+            <label for="date1">Дата</label>
+            <input type="date" id="date1">
+        </div>
+<!-- цвет -->
+        <div>
+            <label for="color">Цвет</label>
+            <input type="color" id="color">
+        </div>
+<!-- сообщение -->
+        <div>
+            <label for="message">FAQ</label>
+            <br>
+            <textarea  id="message" cols="100" rows="10" ></textarea>
+        </div>
+<!-- выбрать что-то из выбора -->
+        <div>
+            <label for="sex">Ваш пол</label>
+            <select id="sex">
+                <option value="male">Мужчина</option>
+                <option value="female" selected>Женщина</option>
+                <option value="other">Другое</option>
+
+            </select>
+        </div>
+<!-- выбрать только одно -->
+        <div>
+            <label>Количество работ</label>
+            <input type="radio" name="work"> 1
+            <input type="radio" name="work">2
+            <input type="radio" name="work">5
+            <input type="radio" name="work">10+
+        </div>
+<!-- выбрать несколько позиций -->
+        <div>
+            <label>Количество работ</label>
+            <input type="checkbox" name="food"> Картошка
+            <input type="checkbox" name="food">хлеб
+            <input type="checkbox" name="food"> яйцо
+            <input type="checkbox" name="food"> картошка
+        </div>
+    <br>
+        <!-- <input type="submit" value="отправить форму"> -->
+        <button type="submit">Отправить форму </button>
+
+
+
+
+
+
+    
+    </form>
+</body>
+</html>
