@@ -21,7 +21,7 @@
     <div class="container">
 
 <div class="info">
-        <img src="Ксю.jpg"
+        <img src="images/Ксю.jpg"
         height="300px" id="img" alt="здесь моя картинка с Артека" /> 
         
         <div class="card header">
@@ -137,18 +137,18 @@
 
 
 
-    <form  class="form">
+    <form action="mail.php" method="post" class="form">
         <h2> Связаться со мной</h2>
 
         <div class="form-row">
             <div class="form-group">
                 <label for="name">Ваше имя:</label>
-                <input type="text" id="name" placeholder="Введите имя">
+                <input type="text" id="name" name="user_name" placeholder="Введите имя">
             </div>
         
             <div class="form-group">
                 <label for="email1">Ваш email:</label>
-                <input type="email" id="email1" placeholder="Введите почту">
+                <input type="email" id="email1" name="user_email" placeholder="Введите почту">
             </div>
         </div>
     
